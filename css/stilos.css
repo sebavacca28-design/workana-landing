@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* font-family: "IBM Plex Sans", sans-serif; */
+
+/* 1 rem es igual a 16 pixeles */
+
+/* Reset de márgenes para tipografía y elementos básicos */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/* etiquetas */
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1 {
+    color: #1D1D1B
+}
+
+h2 {
+    color: #1D1D1B;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 114.286% */
+}
+
+h3 {
+    color: #1D1D1B;
+    font-size: 48px;
+    letter-spacing: -.02em;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52px;
+
+}
+
+h4 {
+    color: var(--Neutral-Colors-Color-800, #1D1D1B);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h5 {
+    color: #2679f6;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    /* 111.111% */
+}
+
+p {
+    font-size: 16px;
+    color: #252525;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.textos-white-theme{
+    color: #FFFFFF;
+}
+
+.textos-75-white-theme{
+    color: #cecece;
+}
+/* Header */
+/* header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+    /*  */
+
+header img {
+    width: 150px;
+    margin: 8px;
+}
+
+header a,
+footer a {
+    text-decoration: none;
+}
+
+header nav:not(.navbar) ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-right: 8px;
+
+}
+
+button {
+    appearance: none;
+    /* Elimina estilos nativos del sistema operativo */
+    background: none;
+    /* Quita el color gris de fondo */
+    border: none;
+    /* Quita el borde con relieve */
+    padding: 0;
+    /* Elimina el espacio interno por defecto */
+    cursor: pointer;
+    /* Hace que aparezca la manito al pasar el mouse */
+    outline: inherit;
+    /* Asegura que el foco se comporte bien */
+    font: inherit;
+    /* Hace que el texto use la fuente del resto de la web */
+}
+
+/* Avoid overriding Bootstrap navbar defaults globally
+header nav:not(.navbar) {
+    width: 20%;
+} */
+
+header .navbar {
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+    box-shadow: -4px -4px 4px 0 rgba(255, 255, 255, 0.80)
+}
+
+header .navbar .nav-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: inherit;
+}
+
+header .navbar .navbar-nav {
+    gap: 24px;
+}
+
+.has-fixed-navbar {
+    padding-top: 88px;
+}
+
+/* Footer */
+footer ul,
+header ul,
+body ul {
+    list-style: none;
+}
+
+/* Clases */
+
+/* Organizacion geneal */
+
+.bk-general {
+    background-color: #FCFCFC;
+
+}
+
+.conteiner-general {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+    box-sizing: border-box;
+}
+
+/* Botones */
+.boton-sm {
+    justify-content: center;
+    align-items: center;
+    padding: 16px 36px;
+    border-radius: 40px;
+    min-width: 200px;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(2, 6, 23, 0.18);
+}
+
+.boton-primario-sm {
+    background-color: #1D1D1B;
+    color: #FFFFFF;
+
+}
+
+.boton-secundario-sm {
+    background-color: #FFFFFF;
+    color: #1D1D1B;
+}
+
+.boton-acento-sm {
+    background-color: #2679f6;
+    color: #FFFFFF;
+}
+
+/* Hero section */
+.hero-imagen {
+    width: 535px;
+    border-radius: 2rem;
+    box-shadow: 0 4px 30.8px 0 rgba(0, 0, 0, 0.10);
+}
+
+.contenedor-hero-contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    gap: 70px;
+
+}
+
+.contenedor-hero-texto-buttom {
+    display: flex;
+    flex-direction: column;
+    max-width: 535px;
+    gap: 16px;
+}
+
+.contenedor-botones-hero {
+    display: flex;
+    gap: 16px;
+
+}
+
+.presentacion {
+    min-height: 75vh;
+    flex-direction: column;
+    display: flex;
+    /* centra horizontal */
+    align-items: center;
+    /* centra vertical */
+    padding: 2rem;
+
+}
+
+.contenedor-texto-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Estilos de texto */
+.titulos-secciones {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 114.286% */
+}
+
+.texto-violet {
+    color: #7C3796;
+    font-weight: 500;
+}
+
+.titulo-index {
+    color: #1D1D1B;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 68px;
+
+}
+
+/* Organizacion de titulos centrados */
+
+.conteiner-texto-completo {
+    display: flex;
+    padding-bottom: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo de la barra de nav o footer */
+.logo {
+    width: 150px;
+    margin: 8px;
+}
+
+/* Imagen de fondo pagina principal */
+
+
+/* Logo sobre bk de fondo pagina principal */
+.imagen-carrusel {
+    width: 700px;
+
+}
+
+/* Iconos de Servicios */
+.imagen-servicios {
+    width: 100px;
+}
+
+.form-field {
+    background-color: #cda7dc;
+}
+
+/* Seccion quienes somos */
+
+.bk-quienes-somos {
+    background-color: #f9f9fa;
+}
+
+/* .contenedor-qs-general {
+    display: flex;
+    max-width: 1200px;
+    padding: 60px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+} */
+
+.conteiner-texto-remarca {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+
+.iconos-izquierda {
+    width: 45px;
+}
+
+.fondo-icono-izq {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 25px;
+    background: #FFFFFF;
+    box-shadow: -4px -4px 4px 0 rgba(255, 255, 255, 0.80) inset, 4px 4px 4px 0 rgba(0, 0, 0, 0.10) inset;
+}
+
+.iconos-derecha {
+    height: 80px;
+}
+
+.icons-conteiner-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+}
+
+.card-conteiner {
+    display: flex;
+    height: fit-content;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: -4px -4px 10px 0 rgba(255, 255, 255, 0.50), 4px 4px 10px 0 rgba(0, 0, 0, 0.10);
+}
+
+.card-w-lg {
+    width: 660px;
+}
+
+.card-w-m {
+    width: 450px;
+}
+
+.text-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.contenedor-cards {
+    display: flex;
+    width: 1140px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Seccion adn workana */
+/* .seccion-centrada-completa {
+    display: flex;
+    padding: 60px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+} */
+
+.adn-wkn-contenido {
+    display: flex;
+    padding: 16px;
+    height: 146px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 10px;
+    border: 2px solid var(--Purple-Shades-Purple-Shade-200, #F7F0FA);
+    background: var(--Purple-Shades-Purple-Shade-100, #FBF7FC);
+    box-shadow: 0 4px 6.6px 0 rgba(124, 55, 150, 0.10);
+}
+
+.card-adn-workana {
+    display: flex;
+    min-width: 360px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+
+    border-radius: 20px;
+    border: 2px solid var(--Neutral-Colors-Color-200, #E8E8E8);
+    background: var(--Neutral-Colors-Color-100, #FCFCFC);
+    box-shadow: 0 4px 30.8px 0 rgba(0, 0, 0, 0.10);
+}
+
+.adn-wkn-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+/* .header-secciones-centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+} */
+
+.ns-card-interna {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 369px;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 10px;
+    border: 2px solid var(--Purple-Shades-Purple-Shade-200, #F7F0FA);
+    background: var(--Purple-Shades-Purple-Shade-100, #FBF7FC);
+    box-shadow: 0 4px 6.6px 0 rgba(124, 55, 150, 0.10);
+}
+
+.ns-card-externa {
+    display: inline-flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    border-radius: 20px;
+    border: 2px solid var(--Neutral-Colors-Color-200, #E8E8E8);
+    background: var(--Neutral-Colors-Color-100, #FCFCFC);
+    box-shadow: 0 4px 30.8px 0 rgba(0, 0, 0, 0.10);
+}
+
+/* Seccion Como Trabajamos */
+/* .contenedor-ct {
+    display: flex;
+    padding: 60px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+} */
+
+.contenedor-cards-texto-ct {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 54px;
+    align-self: stretch;
+}
+
+.contenedor-texto-ct {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: 20px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.numero-ct {
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-ct {
+    display: flex;
+    width: 350px;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+.texto-ct {
+    display: flex;
+    width: 350px;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+/* CTa Footer */
+
+.cta-footer {
+    background-image: url("../images/g-s-o.png");
+    height: 500px;
+    border-radius: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.conteiner-titulo-subt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    gap: 24px;
+}
