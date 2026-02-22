@@ -81,13 +81,15 @@ p {
     line-height: normal;
 
 }
-.textos-white-theme{
+
+.textos-white-theme {
     color: #FFFFFF;
 }
 
-.textos-75-white-theme{
+.textos-75-white-theme {
     color: #cecece;
 }
+
 /* Header */
 /* header {
     display: flex;
@@ -321,6 +323,10 @@ body ul {
 }
 
 /* Seccion quienes somos */
+
+.salto-mobile {
+    display: none;
+}
 
 .bk-quienes-somos {
     background-color: #f9f9fa;
@@ -570,4 +576,105 @@ body ul {
     width: 500px;
     text-align: center;
     gap: 24px;
+}
+
+@media (max-width: 576px) {
+
+    /* Seccion de lo compartido entre las dos secciones */
+    bk-quienes-somos .conteiner-general,
+    .adn-workana.conteiner-general {
+        padding: 40px 16px;
+    }
+
+    .bk-quienes-somos .conteiner-texto-completo,
+    .adn-workana .conteiner-texto-completo {
+        align-items: center;
+        text-align: center;
+        padding-bottom: 24px;
+        gap: 10px;
+    }
+
+    .bk-quienes-somos h2,
+    .adn-workana h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+     .bk-quienes-somos .conteiner-texto-remarca,
+    .adn-workana .conteiner-texto-remarca
+     img {
+        display: none;
+    }
+
+
+    /* Seccion de lo especifico para QUIENES SOMOS */
+    .bk-quienes-somos .contenedor-cards,
+    .bk-quienes-somos .card-w-lg,
+    .bk-quienes-somos .card-w-m {
+        width: 100%;
+    }
+
+    .bk-quienes-somos .card-conteiner {
+        padding: 16px;
+        gap: 24px;
+    }
+
+    .bk-quienes-somos .conteiner-texto-remarca {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bk-quienes-somos .conteiner-texto-remarca h5 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .salto-mobile {
+        display: inline;
+    }
+
+    .bk-quienes-somos .fondo-icono-izq {
+        width: 70px;
+        height: 70px;
+        border-radius: 18px;
+    }
+
+    .bk-quienes-somos .iconos-izquierda {
+        width: 35px;
+    }
+
+    .bk-quienes-somos .iconos-derecha {
+        height: 64px;
+    }
+
+    /* Seccion especifica de ADN WORKANA */
+      .adn-workana .adn-wkn-cards {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .adn-workana .card-adn-workana {
+    min-width: 0;   
+    width: 100%;
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .adn-workana .adn-wkn-contenido {
+    height: auto;
+    padding: 14px;
+    gap: 8px;
+  }
+
+  .adn-workana .adn-wkn-contenido h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .adn-workana .adn-wkn-contenido p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
 }
