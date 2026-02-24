@@ -87,7 +87,7 @@ p {
 }
 
 .textos-75-white-theme {
-    color: #cecece;
+    color: #dcdcdc;
 }
 
 /* Header */
@@ -219,9 +219,15 @@ body ul {
 }
 
 /* Hero section */
+
+.hero-imagen-mobile {
+    display: none;
+}
+
 .hero-imagen {
     width: 535px;
     border-radius: 2rem;
+    display: block;
     box-shadow: 0 4px 30.8px 0 rgba(0, 0, 0, 0.10);
 }
 
@@ -578,34 +584,129 @@ body ul {
     gap: 24px;
 }
 
+/* Footer */
+
+.conteiner-final {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px 10px;
+    box-sizing: border-box;
+}
+
+.contenedor-superior-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    gap: 16px;
+}
+
+.contenedor-nav-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.redes-icon {
+    width: 30px;
+
+}
+
+.footer-icono {
+  background-color:#FFFFFF;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 10px 0 rgb(250, 251, 255),
+              5px 5px 10px 0 rgba(166, 171, 189, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.contenedor-redes-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.contenedor-final-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenedor-nav-footer a {
+    color:#252525;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 @media (max-width: 576px) {
 
     /* Seccion de lo compartido entre las dos secciones */
-    bk-quienes-somos .conteiner-general,
+    .bk-quienes-somos .conteiner-general,
     .adn-workana.conteiner-general {
         padding: 40px 16px;
     }
 
     .bk-quienes-somos .conteiner-texto-completo,
-    .adn-workana .conteiner-texto-completo {
+    .adn-workana .conteiner-texto-completo,
+    .contenedor-texto-hero {
         align-items: center;
         text-align: center;
         padding-bottom: 24px;
         gap: 10px;
     }
 
-    .bk-quienes-somos h2,
-    .adn-workana h2 {
+    h2 {
         font-size: 34px;
         line-height: 40px;
     }
 
-     .bk-quienes-somos .conteiner-texto-remarca,
-    .adn-workana .conteiner-texto-remarca
-     img {
+    .conteiner-texto-remarca,
+    .adn-workana .conteiner-texto-completo h5 {
         display: none;
     }
 
+
+    /* Seccion HERO */
+    .contenedor-texto-hero h1 {
+        font-size: 50px;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .contenedor-hero-contenido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-imagen-mobile {
+        display: block;
+        width: 100%;
+    }
+
+
+    .contenedor-botones-hero {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .boton-sm {
+        width: 100%;
+    }
+
+    .hero-imagen-desktop {
+        display: none;
+    }
 
     /* Seccion de lo especifico para QUIENES SOMOS */
     .bk-quienes-somos .contenedor-cards,
@@ -648,33 +749,84 @@ body ul {
     }
 
     /* Seccion especifica de ADN WORKANA */
-      .adn-workana .adn-wkn-cards {
-    flex-direction: column;
-    gap: 16px;
-    align-items: stretch;
-  }
+    .adn-workana .adn-wkn-cards {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
 
-  .adn-workana .card-adn-workana {
-    min-width: 0;   
-    width: 100%;
-    padding: 14px;
-    gap: 12px;
-  }
+    .adn-workana .card-adn-workana {
+        min-width: 0;
+        width: 100%;
+        padding: 14px;
+        gap: 12px;
+    }
 
-  .adn-workana .adn-wkn-contenido {
-    height: auto;
-    padding: 14px;
-    gap: 8px;
-  }
+    .adn-workana .adn-wkn-contenido {
+        height: auto;
+        padding: 14px;
+        gap: 8px;
+    }
 
-  .adn-workana .adn-wkn-contenido h4 {
-    font-size: 20px;
-    line-height: 24px;
-  }
+    .adn-workana .adn-wkn-contenido h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
 
-  .adn-workana .adn-wkn-contenido p {
-    font-size: 15px;
-    line-height: 20px;
-  }
+    .adn-workana .adn-wkn-contenido p {
+        font-size: 15px;
+        line-height: 20px;
+    }
 
+    /* Seccion de COMO TRABAJAMOS */
+    .contenedor-texto-ct {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px 40px;
+    }
+
+    .numero-ct {
+        width: auto;
+        flex: 0 0 auto;
+    }
+
+    .titulo-ct {
+        width: auto;
+        flex: 1 1 0;
+    }
+
+    .texto-ct {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    /* Seccion de FOOTER CTA */
+    .cta-footer {
+        height: 400px;
+        padding: 24px 16px;
+        /* achica espaciado horizontal */
+        gap: 16px;
+        border-radius: 16px;
+        background-size: cover;
+    }
+
+    .conteiner-titulo-subt {
+        width: 100%;
+        max-width: 450px;
+        gap: 12px;
+    }
+
+    .cta-footer .boton-sm {
+        width: auto;
+        min-width: 0;
+        padding: 12px 24px;
+    }
+
+    /* Seccion FOOTER */
+    .contenedor-final-footer{
+        width: 100%;
+        flex-direction: column;
+        gap: 26px;
+        flex-direction: column-reverse;
+    }
 }
