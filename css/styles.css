@@ -26,6 +26,7 @@ figure,
 blockquote {
     margin: 0;
     padding: 0;
+    text-wrap: balance;
 }
 
 /* etiquetas */
@@ -79,7 +80,7 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
+    max-width: 900px;
 }
 
 .textos-white-theme {
@@ -216,6 +217,11 @@ body ul {
 .boton-acento-sm {
     background-color: #2679f6;
     color: #FFFFFF;
+}
+
+.estructura-texto-centrado {
+    text-align: center;
+    max-width: 900px;
 }
 
 /* Hero section */
@@ -586,6 +592,25 @@ body ul {
 
 /* Footer */
 
+.footer-contenedor-efecto {
+    z-index: 99;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    /* box-shadow: 0 -50px 14px #0f567a00, 0 -32px 13px #0f567a08, 0 -18px 11px #0f567a1a, 0 -8px 8px #0f567a2b, 0 -2px 4px #0f567a33; */
+
+}
+
+.shadow-general {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.50);
+}
+
+.shadow-contact {
+    box-shadow: -5px -5px 10px 0 rgb(250, 251, 255)
+}
+
 .conteiner-final {
     max-width: 1200px;
     margin: 0 auto;
@@ -616,15 +641,15 @@ body ul {
 }
 
 .footer-icono {
-  background-color:#FFFFFF;
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  box-shadow: -5px -5px 10px 0 rgb(250, 251, 255),
-              5px 5px 10px 0 rgba(166, 171, 189, 0.25);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+    background-color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 10px 0 rgb(250, 251, 255),
+        5px 5px 10px 0 rgba(166, 171, 189, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -642,10 +667,117 @@ body ul {
 }
 
 .contenedor-nav-footer a {
-    color:#252525;
+    color: #252525;
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
+}
+
+/* Clases para SERVICES */
+
+.imagen-hero-services {
+    width: 700px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-hero-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Clases de CONTACTO */
+
+.bk-contacto {
+    background-color: #f1f1f2;
+}
+
+.bk-icon-contact {
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 10px 0 rgb(250, 251, 255),
+        5px 5px 10px 0 rgba(166, 171, 189, 0.25);
+}
+
+.contenedor-hero-contenido-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 1200px;
+
+}
+
+.contenedor-texto-icono-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.estructura-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.contenedor-izq-texto-contact {
+    width: 535px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: space-between;
+
+
+}
+
+.contenedor-der-texto-contact {
+    width: 535px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    box-shadow: -5px -5px 10px 0 rgb(250, 251, 255),
+        5px 5px 10px 0 rgba(166, 171, 189, 0.25);
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 28px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-form label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #252525;
+}
+
+.campo-form input,
+.campo-form textarea {
+    width: 100%;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 12px;
+    padding: 12px 14px;
+    background-color: #f1f1f2;
+   
+
 }
 
 @media (max-width: 576px) {
@@ -804,7 +936,7 @@ body ul {
     .cta-footer {
         height: 400px;
         padding: 24px 16px;
-        /* achica espaciado horizontal */
+
         gap: 16px;
         border-radius: 16px;
         background-size: cover;
@@ -823,7 +955,7 @@ body ul {
     }
 
     /* Seccion FOOTER */
-    .contenedor-final-footer{
+    .contenedor-final-footer {
         width: 100%;
         flex-direction: column;
         gap: 26px;
