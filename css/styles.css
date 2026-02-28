@@ -697,7 +697,7 @@ body ul {
 }
 
 .bk-icon-contact {
-    
+
     width: 60px;
     height: 60px;
     border-radius: 10px;
@@ -776,7 +776,7 @@ body ul {
     border-radius: 12px;
     padding: 12px 14px;
     background-color: #f1f1f2;
-   
+
 
 }
 
@@ -807,6 +807,13 @@ body ul {
         display: none;
     }
 
+    .contact-page .contenedor-hero-contenido-contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: stretch;
+    }
+
 
     /* Seccion HERO */
     .contenedor-texto-hero h1 {
@@ -818,6 +825,8 @@ body ul {
     .contenedor-hero-contenido {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .hero-imagen-mobile {
@@ -960,5 +969,35 @@ body ul {
         flex-direction: column;
         gap: 26px;
         flex-direction: column-reverse;
+    }
+
+    /* Seccion CONTACT PAGE */
+
+    .contenedor-hero-contenido-contacto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-page .contenedor-izq-texto-contact,
+    .contact-page .contenedor-der-texto-contact {
+        width: 100%;
+    }
+
+    .contact-page .contenedor-der-texto-contact {
+        border-radius: 16px;
+    }
+
+    .contact-page form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .contact-page input,
+    .contact-page textarea,
+    .contact-page button {
+        width: 100%;
     }
 }
